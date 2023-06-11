@@ -79,3 +79,21 @@ function ifMrRobogersNeighborhood(inputVal){
 Expected Output: >321
 >Won't you be my neighbor?BoopBeep
 
+Test: "Adding an else statement incase a users input does not have a 1, 2, or, 3 in it."
+Code:
+function ifMrRobogersNeighborhood(inputVal){
+  const roboArray = inputVal.map((elemnet) =>{
+    if (element.includes("3"))
+      return "Won't you be my neighbor?";
+    } else if (element.includes("2")) {
+      return "Boop"
+    } else if (element.includes("1")){
+      return "Beep";
+    } else {
+      return element;
+    });
+    return roboArray;
+}
+Expected Outut:>7
+7
+
