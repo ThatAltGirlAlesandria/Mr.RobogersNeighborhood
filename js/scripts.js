@@ -7,22 +7,23 @@ function beepBoop(input) {
     return inputValue;
   }
 
-
-function ifMrRobogersNeighborhood(inputVal){
-  const roboArray = inputVal.map((elemnet) => {
+function ifMrRobogersNeighborhood(inputValue) {
+  const roboArray = inputValue.map((element) => {
     if (element.includes("3")) {
       return "Won't you be my neighbor?";
-    } else if (element.includes("2")) {
+  } else if (element.includes("2")) {
       return "Boop";
-    } else if (element.includes("1")){
+  } else if (element.includes("1")) {
       return "Beep";
-    } else {
-      return element;
-    }});
-    return roboArray.join(" ");
+  } else {
+    return element;
+  }
+});
+  return roboArray.join(", ");
 };
 
-function mrRobogersNeighborhood(e){
+function mrRobogersNeighborhood(e) {
+  e.preventDefault();
   const userInput = document.getElementById("input-number").value;
   const newValue = ifMrRobogersNeighborhood(beepBoop(userInput));
   const userOutput = document.getElementById("outPut");
