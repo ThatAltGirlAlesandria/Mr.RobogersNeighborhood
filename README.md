@@ -95,7 +95,7 @@ function ifMrRobogersNeighborhood(inputVal){
     return roboArray;
 }
 Expected Outut:>7
-7
+>7
 
 Test: "Converting user input into new values."
 Code
@@ -103,4 +103,9 @@ function mrRobogersNeighborhood(e){
   const userInput = document.getElementById("input-number").value;
   const newValue = ifMrRobogersNeighborhood(beepBoop(userInput));
   const userOutput = document.getElementById("outPut");
+  userOutput.innerText = newValue;
+  userOutput.removeAttribute("class");
 }
+
+Expected Output: >123456789
+>BeepBoopWon't you be my neighbor?4567
