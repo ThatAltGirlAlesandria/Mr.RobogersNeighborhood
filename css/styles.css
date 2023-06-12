@@ -2,7 +2,12 @@
   display: none;
 }
 
+h1{
+  color: rgb(255, 255, 255);
+}
 body {
-  background-color: lightpink;
-  color:purple;
+  margin: 3%;
+  background-color: maroon;
+  color: beige;
+  font-size: 20px;
 }
